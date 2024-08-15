@@ -1,0 +1,25 @@
+strict graph G {
+  1 [ color="green" label="Actividad1" ];
+  2 [ color="yellow" label="Actividad2" ];
+  3 [ color="red" label="Actividad3" ];
+  4 [ color="yellow" label="Actividad5" ];
+  5 [ color="green" label="Actividad4" ];
+  6 [ color="red" label="Actividad6" ];
+  7 [ color="green" label="Actividad7" ];
+  8 [ color="yellow" label="Actividad9" ];
+  9 [ color="red" label="Actividad8" ];
+  1 -- 2 [ style="arrowhead" ];
+  2 -- 3 [ style="arrowhead" ];
+  3 -- 1 [ style="arrowhead" ];
+  3 -- 4 [ style="arrowhead" ];
+  4 -- 1 [ style="arrowhead" ];
+  2 -- 5 [ style="arrowhead" ];
+  5 -- 6 [ style="arrowhead" ];
+  6 -- 2 [ style="arrowhead" ];
+  5 -- 4 [ style="arrowhead" ];
+  4 -- 6 [ style="arrowhead" ];
+  7 -- 8 [ style="arrowhead" ];
+  9 -- 8 [ style="arrowhead" ];
+  7 -- 9 [ style="arrowhead" ];
+  7 -- 2 [ style="arrowhead" ];
+}
